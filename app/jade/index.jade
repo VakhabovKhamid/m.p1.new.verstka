@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include includes/_head.jade
+		link(rel="stylesheet", href="css/highcharts.css")
+	body
+		// start #mainWrap
+		#mainWrap
+			// start #mainNavBar
+			#mainNavBar
+				include includes/_main_nav_bar.jade
+			// end #mainNavBar
+			// start #header
+			#header
+				include includes/_header.jade
+			// end #header
+			// start #content
+			#content
+				.mainContainer
+					.pageContent.contentShow
+						.contentHead
+							.title-1 Statistics
+						.chartWrap
+							nav.periodsNav
+								ul
+									li
+										a.btnDropDown(href="#", data-dropdow='#customStatisticChart') Custom
+										.dropDownBox.alignLeft#customStatisticChart
+											.input-daterange#statisticInputDateRange
+												i.icon-calendar
+												input.date_format.start(type="text", placeholder='Date from')
+												i.icon-arrow1-right
+												input.date_format.end(type="text", placeholder='Date to')
+											.js-datepicker-inline <div class="range-start"></div><div class="range-end"></div>
+											.dropDownBoxFoot
+												button.btn0.btn2.btnBlock OK
+									li
+										a(href="#") Year
+									li
+										a(href="#") Month
+									li
+										a(href="#") Week
+									li
+										a(href="#") Yesterday
+									li.active
+										a(href="#") Today
+							#js-statistics-chart
+							.statisticsNumbers
+								.statisticsNumber
+									.dynamicNumber.green +435
+									strong 3542
+									span Redeems Last Month
+								.statisticsNumber
+									.dynamicNumber.green +25
+									strong 872
+									span Redeems Last Week
+								.statisticsNumber
+									.dynamicNumber.green +12
+									strong 55
+									span Redeems Today
+						.contentHead
+							.title-1 Latest Feedbacks
+						.contentBlock
+							.table1
+								table
+									thead
+										tr
+											td USER
+											td FEEDBACK
+											td DATE
+									tbody
+										tr
+											td.btnModal(data-modal='#reply')
+												p
+													strong Rasim Rahmanov
+												p
+													span.greyText +994 55 757 96 06
+											td.btnModal(data-modal='#reply')
+												p
+													strong Subject
+												p Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….
+											td
+												p 21:35 &nbsp;
+													span.greyText 12.02.2018
+										tr
+											td.btnModal(data-modal='#reply')
+												p
+													strong Rasim Rahmanov
+												p
+													span.greyText +994 55 757 96 06
+											td.btnModal(data-modal='#reply')
+												p
+													span.label1.labelGreen Replied
+													span  Subject
+												p 
+													span.greyText Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….
+											td
+												p 21:35 &nbsp;
+													span.greyText 12.02.2018
+										tr
+											td.btnModal(data-modal='#reply')
+												p
+													strong Rasim Rahmanov
+												p
+													span.greyText +994 55 757 96 06
+											td.btnModal(data-modal='#reply')
+												p
+													strong Subject
+												p Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….
+											td
+												p 21:35 &nbsp;
+													span.greyText 12.02.2018
+							.clearFix
+								a.redLink.right(href="feedback.html")
+									span See all
+									i.icon-arrow1-right
+			// end #content
+			.modalWindow#reply
+				.modalWindowMask
+				.modalWindowBody
+					.modalWindowClose
+						i.icon-close
+					.feedbackModalHead
+						.userName Rasim Rahmanov
+						.greyText +994 55 757 96 06
+					.feedbackModalContent
+						p
+							strong Subject
+						p Nulla vestibulum, diam laoreet commodo suscipit, justo arcu rutrum dui, vitae aliquet velit libero id urna. Integer sollicitudin tincidunt mi, ac lacinia quam iaculis sit amet. Nulla at eros aliquet, pretium metus ac, molestie urna. Suspendisse potenti. In lobortis odio placerat augue congue, at blandit felis tincidunt. Mauris vitae iaculis augue, in pharetra urna. Cras posuere quis augue in cursus. Mauris velit tortor, suscipit et malesuada ac, facilisis nec nibh. Phasellus mollis tempus ante ac posuere.
+					.feedbackModalForm
+						.formControl
+							.field
+								textarea(rows="5", placeholder='Write your reply…')
+					.modalWindowFooter.textRight
+						button(type='button', onclick='hideModal($("#reply"))').btn0.btn2 Cancel
+						button(type='submit').btn0.btn1 Send
+		// end #mainWrap
+		script(src='js/highcharts.js')
+		script(src='js/charts-scripts.js')
+		#loader
+			.loaderInnerWrap
+				.loader
+					.loader__bar
+					.loader__bar
+					.loader__bar
+					.loader__bar
+					.loader__bar
+					.loader__ball

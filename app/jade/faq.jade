@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include includes/_head.jade
+	body
+		// start #mainWrap
+		#mainWrap
+			// start #mainNavBar
+			#mainNavBar
+				include includes/_main_nav_bar.jade
+			// end #mainNavBar
+			// start #header
+			#header
+				include includes/_header.jade
+			// end #header
+			// start #content
+			#content
+				.mainContainer
+					.pageContent.contentShow
+						.contentHead
+							.title-1 FAQ
+						nav.contentTabs
+							ul
+								li.active
+									a AZERI
+								li
+									a(href="#") ENGLISH
+								li
+									a(href="#") RUSSIAN
+						.contentBlock
+							.formControl
+								label Title
+								.field
+									.fieldRightText
+										.fieldLength <span class="currentLength">0</span>/30
+									input(type="text", placeholder='Название отображаемое в меню', maxLength='30')
+							.formControl
+								label Body
+								.field
+									textarea.textarea(rows="10", placeholder='Содержимое страницы')
+							.formSubmit
+								button.btn0.btn1(type='submit') Save
+			// end #content
+		// end #mainWrap

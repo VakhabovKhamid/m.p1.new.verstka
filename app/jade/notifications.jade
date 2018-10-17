@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include includes/_head.jade
+	body
+		// start #mainWrap
+		#mainWrap
+			// start #mainNavBar
+			#mainNavBar
+				include includes/_main_nav_bar.jade
+			// end #mainNavBar
+			// start #header
+			#header
+				include includes/_header.jade
+			// end #header
+			// start #content
+			#content
+				.mainContainer
+					.pageContent.contentShow
+						.contentHead
+							.title-1 Notifications
+						nav.contentTabs
+							ul
+								li.active
+									a CREATE
+								li
+									a(href="notifications-history.html") HISTORY
+						.contentBlock
+							.clearFix
+								.searchForm.left
+									.filterSelectBlock
+										select.styler
+											option(value="") Regular
+											option(value="") Location
+											option(value="") Push
+									.filterBox
+										button.filterBtn.btnDropDown(data-dropdow='#subscribersFilter') Filters
+											span 2
+										.dropDownBox#subscribersFilter
+											.dropDownBoxHead
+												.title-4 Select
+												button.btn0.btn2.right Clear All
+											.dropDownBoxBody
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span OS
+													.filterField
+														.select1
+															select.styler
+																option(value="") Android
+																option(value="") iOs
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span Operator
+													.filterField
+														.select1
+															select.styler
+																option(value="") Bakcell
+																option(value="") Azercell
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span Gender
+													.filterField
+														.select1
+															select.styler
+																option(value="") Male
+																option(value="") Female
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span City
+													.filterField
+														.select1
+															select.styler
+																option(value="") Baku
+																option(value="") Baku
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span Day of Birth
+													.filterField
+														.input-daterange
+															i.icon-calendar
+															input.start(type="text", placeholder='Date from')
+															i.icon-arrow1-right
+															input.end(type="text", placeholder='Date to')
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span Registration Date
+													.filterField
+														.input-daterange
+															i.icon-calendar
+															input.start(type="text", placeholder='Date from')
+															i.icon-arrow1-right
+															input.end(type="text", placeholder='Date to')
+											.dropDownBoxFoot
+												button.btn0.btn1.btnBlock Done
+									.foundLength Found <strong>7 555</strong> users
+								a.btn0.btn1.right(href="#") Export
+							.hr1
+							.formContainer
+								.formControl
+									label Coordinates
+									.field
+										.fieldRightText
+											.showOnMaps
+												span Show on map
+												i.icon-marker
+										input(type="text")
+								.langForm AZERBAIJANI
+								.formControl
+									label Notification subject
+									.field
+										input(type="text")
+								.formControl
+									label Body
+									.field
+										textarea.textarea(rows="10")
+								.formControl
+									label Note
+									.field
+										input(type="text")
+								.langForm ENGLISH
+								.formControl
+									label Notification subject
+									.field
+										input(type="text")
+								.formControl
+									label Body
+									.field
+										textarea.textarea(rows="10")
+								.formControl
+									label Note
+									.field
+										input(type="text")
+								.langForm RUSSIAN
+								.formControl
+									label Notification subject
+									.field
+										input(type="text")
+								.formControl
+									label Body
+									.field
+										textarea.textarea(rows="10")
+								.formControl
+									label Note
+									.field
+										input(type="text")
+								.formSubmit
+									button.btn0.btn1(type='submit') Send Notification
+			// end #content
+		// end #mainWrap

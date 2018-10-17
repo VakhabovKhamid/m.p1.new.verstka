@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include includes/_head.jade
+	body
+		// start #mainWrap
+		#mainWrap
+			// start #mainNavBar
+			#mainNavBar
+				include includes/_main_nav_bar.jade
+			// end #mainNavBar
+			// start #header
+			#header
+				include includes/_header.jade
+			// end #header
+			// start #content
+			#content
+				.mainContainer
+					.pageContent.contentShow
+						.contentHead
+							.title-1 Notifications
+						nav.contentTabs
+							ul
+								li
+									a(href="notifications.html") CREATE
+								li.active
+									a HISTORY
+						.contentBlock
+							.clearFix
+								.searchForm.left
+									.searchInput
+										input(type="text", placeholder='Search')
+										button.searchInputBtn(type='submit')
+											i.icon-search
+								a.btn0.btnRed.right(href="#") Delete
+							.hr1
+							.table1
+								table
+									thead
+										tr
+											td
+											td SENT BY / DATE
+											td(width='50%') CONTENT
+											td NOTE
+											td(align='right') TYPE
+											td
+									tbody
+										tr
+											td
+												input.styler(type="checkbox")
+											td.btnModal(data-modal='#notificationDetails')
+												p
+													strong Admin
+												p 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td.btnModal(data-modal='#notificationDetails')
+												p
+													strong Subject
+												p 
+													span Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….
+											td
+												span.greyText McDonalds Ganjlik
+											td(align='right')
+												p
+													strong Regular
+												.typeGreen Sent
+											td
+												.tableButtons
+													a(href="#")
+														i.icon-trash
+										tr
+											td
+												input.styler(type="checkbox")
+											td.btnModal(data-modal='#notificationDetails')
+												p
+													strong Admin
+												p 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td.btnModal(data-modal='#notificationDetails')
+												p
+													strong Subject
+												p 
+													span Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….
+											td
+												span.greyText 28 Mall
+											td(align='right')
+												p
+													strong Regular
+												.typeGreen Sent
+											td
+												.tableButtons
+													a(href="#")
+														i.icon-trash
+										tr
+											td
+												input.styler(type="checkbox")
+											td.btnModal(data-modal='#notificationDetails')
+												p
+													strong Admin
+												p 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td.btnModal(data-modal='#notificationDetails')
+												p
+													strong Subject
+												p 
+													span Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….
+											td
+												span.greyText Port Baku
+											td(align='right')
+												p
+													strong Push
+												.typeGrey Ongoing
+											td
+												.tableButtons
+													a(href="#")
+														i.icon-trash
+										tr
+											td
+												input.styler(type="checkbox")
+											td.btnModal(data-modal='#notificationDetails')
+												p
+													strong Admin
+												p 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td.btnModal(data-modal='#notificationDetails')
+												p
+													strong Subject
+												p 
+													span Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….
+											td
+												span.greyText Bakcell Head
+											td(align='right')
+												p
+													strong Location
+												.typeGrey Ongoing
+											td
+												.tableButtons
+													a(href="#")
+														i.icon-trash
+										tr
+											td
+												input.styler(type="checkbox")
+											td.btnModal(data-modal='#notificationDetails')
+												p
+													strong Admin
+												p 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td.btnModal(data-modal='#notificationDetails')
+												p
+													strong Subject
+												p 
+													span Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….
+											td
+												span.greyText 
+											td(align='right')
+												p
+													strong Regular
+												.typeGrey Ongoing
+											td
+												.tableButtons
+													a(href="#")
+														i.icon-trash
+							.contentFoot
+								ul.pagination.left
+									li.page-item
+										a.page-link(href="#")
+											i.icon-paginator-arrow-left
+									li.page-item
+										a.page-link(href="#") 1
+									li.page-item
+										a.page-link(href="#") 2
+									li.page-item
+										a.page-link(href="#") 3
+									li.page-item
+										span ...
+									li.page-item
+										a.page-link(href="#") 17
+									li.page-item
+										a.page-link(href="#") 18
+									li.page-item
+										a.page-link(href="#") 19
+									li.page-item
+										a.page-link(href="#")
+											i.icon-paginator-arrow-right
+								.viewCount.right
+									label Display on page
+									select.styler
+										option(value="20") 20
+										option(value="40") 40
+										option(value="60") 60
+			// end #content
+			.modalWindow#notificationDetails
+				.modalWindowMask
+				.modalWindowBody
+					.modalWindowClose
+						i.icon-close
+					.notificationDetailsTable
+						table
+							tr
+								td
+									span.greyText Sent by
+								td 
+									strong Admin
+							tr
+								td
+									span.greyText Sent on
+								td 
+									span 21:35  /  <strong>12.02.2018</strong>
+							tr
+								td
+									span.greyText Type
+								td 
+									strong Regular
+							tr
+								td
+									span.greyText Coordinates
+								td 
+									a(href="#")
+										strong 40.375252, 49.860482
+							tr
+								td(colspan='2')
+									.trHr1
+							tr
+								td
+									span.greyText Subject
+								td 
+									strong Subject
+							tr
+								td
+									span.greyText Body
+								td 
+									span Nulla vestibulum, diam laoreet commodo suscipit, justo arcu rutrum dui, vitae aliquet velit libero id urna. Integer sollicitudin tincidunt mi, ac lacinia quam iaculis sit amet. Nulla at eros aliquet, pretium metus ac, molestie urna. Suspendisse potenti. 
+							tr
+								td(colspan='2')
+									.trHr1
+							tr
+								td
+									span.greyText Subscribers
+								td 
+									strong 44 334
+									a.btn0.btn1.right(href="#") Export
+		// end #mainWrap

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include includes/_head.jade
+	body
+		// start #mainWrap
+		#mainWrap
+			// start #mainNavBar
+			#mainNavBar
+				include includes/_main_nav_bar.jade
+			// end #mainNavBar
+			// start #header
+			#header
+				include includes/_header.jade
+			// end #header
+			// start #content
+			#content
+				.mainContainer
+					.pageContent.contentShow
+						.contentHead
+							.title-1 Activity Log
+						.contentBlock
+							.clearFix
+								.searchForm.left
+									.searchInput
+										input(type="text", placeholder='Search')
+										button.searchInputBtn(type='submit')
+											i.icon-search
+									.formControl
+										.input-daterange.js-datepicker
+											i.icon-calendar
+											input.start(type="text", placeholder='Date from')
+											i.icon-arrow1-right
+											input.end(type="text", placeholder='Date to')
+							.hr1
+							.table1
+								table
+									thead
+										tr
+											td DATE
+											td ACTION
+											td IP
+											td USER
+											td(width='40')
+									tbody
+										tr
+											td
+												span 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td
+												span User <strong>Rasim</strong> has logged in
+											td
+												span 88.33.22.53
+											td
+												span System
+											td(align='right')
+												.tableButtons
+													a
+														i.icon-info
+										tr
+											td
+												span 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td
+												span Article "<strong>The Ultimate Guide To company</strong>" was added
+											td
+												span 172.34.221.155
+											td
+												span System
+											td(align='right')
+												.tableButtons
+													a
+														i.icon-info
+										tr
+											td
+												span 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td
+												span Maintenance mode turned off
+											td
+												span 172.34.221.155
+											td
+												span System
+											td(align='right')
+												.tableButtons
+													a
+														i.icon-info
+										tr
+											td
+												span 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td
+												span User <strong>Rasim</strong> has logged in
+											td
+												span 88.33.22.53
+											td
+												span System
+											td(align='right')
+												.tableButtons
+													a
+														i.icon-info
+										tr
+											td
+												span 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td
+												span User <strong>Rasim</strong> has logged in
+											td
+												span 88.33.22.53
+											td
+												span System
+											td(align='right')
+												.tableButtons
+													a
+														i.icon-info
+							.contentFoot
+								ul.pagination.left
+									li.page-item
+										a.page-link(href="#")
+											i.icon-paginator-arrow-left
+									li.page-item
+										a.page-link(href="#") 1
+									li.page-item
+										a.page-link(href="#") 2
+									li.page-item
+										a.page-link(href="#") 3
+									li.page-item
+										span ...
+									li.page-item
+										a.page-link(href="#") 17
+									li.page-item
+										a.page-link(href="#") 18
+									li.page-item
+										a.page-link(href="#") 19
+									li.page-item
+										a.page-link(href="#")
+											i.icon-paginator-arrow-right
+								.viewCount.right
+									label Display on page
+									select.styler
+										option(value="20") 20
+										option(value="40") 40
+										option(value="60") 60
+			// end #content
+			.modalWindow#reply
+				.modalWindowMask
+				.modalWindowBody
+					.modalWindowClose
+						i.icon-close
+					.feedbackModalHead
+						.userName Rasim Rahmanov
+						.greyText +994 55 757 96 06
+					.feedbackModalContent
+						p
+							strong Subject
+						p Nulla vestibulum, diam laoreet commodo suscipit, justo arcu rutrum dui, vitae aliquet velit libero id urna. Integer sollicitudin tincidunt mi, ac lacinia quam iaculis sit amet. Nulla at eros aliquet, pretium metus ac, molestie urna. Suspendisse potenti. In lobortis odio placerat augue congue, at blandit felis tincidunt. Mauris vitae iaculis augue, in pharetra urna. Cras posuere quis augue in cursus. Mauris velit tortor, suscipit et malesuada ac, facilisis nec nibh. Phasellus mollis tempus ante ac posuere.
+					.feedbackModalForm
+						.formControl
+							.field
+								textarea(rows="5", placeholder='Write your reply…')
+					.modalWindowFooter.textRight
+						button(type='button').btn0.btn2 Cancel
+						button(type='submit').btn0.btn1 Send
+		// end #mainWrap

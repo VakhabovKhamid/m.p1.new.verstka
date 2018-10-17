@@ -1,0 +1,228 @@
+// border radius 
+@mixin radius($radius) {
+	border-radius: $radius;
+	-o-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+}
+
+// box shadow 
+@mixin b-shadow ($b-shadow) {
+	box-shadow: $b-shadow;
+	-o-box-shadow: $b-shadow;
+	-moz-box-shadow: $b-shadow;
+	-webkit-box-shadow: $b-shadow;
+	-ms-box-shadow: $b-shadow;	
+}
+
+// text shadow 
+@mixin t-shadow ($t-shadow){
+	text-shadow:$t-shadow;
+	-o-text-shadow:$t-shadow;
+	-moz-text-shadow:$t-shadow;
+	-webkit-text-shadow:$t-shadow; 
+	-ms-text-shadow:$t-shadow;
+}
+
+// transition 
+@mixin transition ($transition) {
+	transition: $transition;
+	-o-transition: $transition;
+	-moz-transition: $transition;
+	-webkit-transition: $transition;
+	-ms-transition: $transition;
+}
+
+// transform
+@mixin transform($transform) {
+    transform: $transform;
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -o-transform: $transform;
+    -ms-transform: $transform;
+}
+
+// inline-block
+@mixin inline-b {
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+}
+
+@mixin cover {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+// block justify 
+@mixin justify {
+	text-align:justify;
+		&:after {
+			display:inline-block;
+			width:100%;
+			content: "";
+		}
+		> li {
+			@include inline-b;
+		}
+}
+
+//===============================================================
+//===============================================================
+//===============================================================
+
+// after clear
+@mixin after-clear{
+	&:after{
+		width: 0;
+		height: 0;
+		clear: both;
+		content: '';
+		display: block;
+	}
+}
+
+// res list none
+@mixin res-list{
+	padding: 0;
+	margin: 0;
+	li{
+		list-style: none;
+	}
+}
+
+
+@mixin ellipsis{
+	white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+
+
+
+// text decoration
+@mixin dec-y {
+	text-decoration: underline;
+		&:hover {
+			text-decoration:none;
+		}
+}
+@mixin dec-n {
+	text-decoration: none;
+		&:hover {
+			text-decoration:underline;
+		}
+}
+@mixin dec-res {
+	text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+}
+@mixin dec-under {
+	text-decoration: underline;
+}
+
+
+// grids in percent 
+
+@mixin gridPercent15 (
+	$width: 100%,
+	$columns: 12
+)
+{
+	$columns_width: $width / $columns;
+	.colp15{
+		display: inline;
+		float: left;
+		padding: 0 15px;
+	}
+	@for $i from 1 through $columns {
+		.colp15-#{$i}{
+			@extend .colp15;
+			width: $i * $columns_width;
+		}
+	}
+}
+
+@mixin gridPercent10 (
+	$width: 100%,
+	$columns: 12
+)
+{
+	$columns_width: $width / $columns;
+	.colp10{
+		display: inline;
+		float: left;
+		padding: 0 10px;
+	}
+	@for $i from 1 through $columns {
+		.colp10-#{$i}{
+			@extend .colp10;
+			width: $i * $columns_width;
+		}
+	}
+}
+
+@mixin gridPercent5 (
+	$width: 100%,
+	$columns: 12
+)
+{
+	$columns_width: $width / $columns;
+	.colp5{
+		display: inline;
+		float: left;
+		padding: 0 5px;
+	}
+	@for $i from 1 through $columns {
+		.colp5-#{$i}{
+			@extend .colp5;
+			width: $i * $columns_width;
+		}
+	}
+}
+
+@mixin gridPercent20 (
+	$width: 100%,
+	$columns: 12
+)
+{
+	$columns_width: $width / $columns;
+	.colp20{
+		display: inline;
+		float: left;
+		padding: 0 20px;
+	}
+	@for $i from 1 through $columns {
+		.colp20-#{$i}{
+			@extend .colp20;
+			width: $i * $columns_width;
+		}
+	}
+}
+
+@mixin gridPercent30 (
+	$width: 100%,
+	$columns: 12
+)
+{
+	$columns_width: $width / $columns;
+	.colp30{
+		display: inline;
+		float: left;
+		padding: 0 30px;
+	}
+	@for $i from 1 through $columns {
+		.colp30-#{$i}{
+			@extend .colp30;
+			width: $i * $columns_width;
+		}
+	}
+}

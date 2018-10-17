@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include includes/_head.jade
+	body
+		// start #mainWrap
+		#mainWrap
+			// start #mainNavBar
+			#mainNavBar
+				include includes/_main_nav_bar.jade
+			// end #mainNavBar
+			// start #header
+			#header
+				include includes/_header.jade
+			// end #header
+			// start #content
+			#content
+				.mainContainer
+					.pageContent.contentShow
+						.contentHead
+							.title-1 Subscribers
+						nav.contentTabs
+							ul
+								li.active
+									a ALL
+						.contentBlock
+							.clearFix
+								.searchForm.left
+									.searchInput
+										input(type="text", placeholder='Search')
+										button.searchInputBtn(type='submit')
+											i.icon-search
+									.filterBox
+										button.filterBtn.btnDropDown(data-dropdow='#subscribersFilter') Filters
+											span 2
+										.dropDownBox#subscribersFilter
+											.dropDownBoxHead
+												.title-4 Select
+												button.btn0.btn2.right Clear All
+											.dropDownBoxBody
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span OS
+													.filterField
+														.select1
+															select.styler
+																option(value="") Android
+																option(value="") iOs
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span Operator
+													.filterField
+														.select1
+															select.styler
+																option(value="") Bakcell
+																option(value="") Azercell
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span Gender
+													.filterField
+														.select1
+															select.styler
+																option(value="") Male
+																option(value="") Female
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span City
+													.filterField
+														.select1
+															select.styler
+																option(value="") Baku
+																option(value="") Baku
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span Day of Birth
+													.filterField
+														.input-daterange.js-datepicker
+															i.icon-calendar
+															input.start(type="text", placeholder='Date from')
+															i.icon-arrow1-right
+															input.end(type="text", placeholder='Date to')
+												.filterList
+													label
+														input.styler(type="checkbox")
+														span Registration Date
+													.filterField
+														.input-daterange.js-datepicker
+															i.icon-calendar
+															input.start(type="text", placeholder='Date from')
+															i.icon-arrow1-right
+															input.end(type="text", placeholder='Date to')
+											.dropDownBoxFoot
+												button.btn0.btn1.btnBlock Done
+								a.btn0.btn1.right(href="#") Export
+							.hr1
+							.table1
+								table
+									thead
+										tr
+											td
+											td NAME
+											td PHONE NUMBER
+											td EMAIL
+											td OS
+											td OPERATOR
+											td GENDER
+											td CITY
+											td DOB
+									tbody
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Ahmad Eyvazov
+											td
+												span +994 55 757 96 06
+											td
+												span ahmad.eyvazov@gmail.com
+											td
+												span Android
+											td
+												span Bakcell
+											td
+												span Male
+											td
+												span Baku
+											td
+												span 07/20/1984
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Sabina Mamedova
+											td
+												span +994 55 757 96 06
+											td
+												span sabina.mammadova@gmail.com
+											td
+												span iOs
+											td
+												span Azercell
+											td
+												span Female
+											td
+												span Baku
+											td
+												span 07/20/1984
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Ahmad Eyvazov
+											td
+												span +994 55 757 96 06
+											td
+												span ahmad.eyvazov@gmail.com
+											td
+												span Android
+											td
+												span Bakcell
+											td
+												span Male
+											td
+												span Baku
+											td
+												span 07/20/1984
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Sabina Mamedova
+											td
+												span +994 55 757 96 06
+											td
+												span sabina.mammadova@gmail.com
+											td
+												span iOs
+											td
+												span Azercell
+											td
+												span Female
+											td
+												span Baku
+											td
+												span 07/20/1984
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Ahmad Eyvazov
+											td
+												span +994 55 757 96 06
+											td
+												span ahmad.eyvazov@gmail.com
+											td
+												span Android
+											td
+												span Bakcell
+											td
+												span Male
+											td
+												span Baku
+											td
+												span 07/20/1984
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Sabina Mamedova
+											td
+												span +994 55 757 96 06
+											td
+												span sabina.mammadova@gmail.com
+											td
+												span iOs
+											td
+												span Azercell
+											td
+												span Female
+											td
+												span Baku
+											td
+												span 07/20/1984
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Ahmad Eyvazov
+											td
+												span +994 55 757 96 06
+											td
+												span ahmad.eyvazov@gmail.com
+											td
+												span Android
+											td
+												span Bakcell
+											td
+												span Male
+											td
+												span Baku
+											td
+												span 07/20/1984
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Sabina Mamedova
+											td
+												span +994 55 757 96 06
+											td
+												span sabina.mammadova@gmail.com
+											td
+												span iOs
+											td
+												span Azercell
+											td
+												span Female
+											td
+												span Baku
+											td
+												span 07/20/1984
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Ahmad Eyvazov
+											td
+												span +994 55 757 96 06
+											td
+												span ahmad.eyvazov@gmail.com
+											td
+												span Android
+											td
+												span Bakcell
+											td
+												span Male
+											td
+												span Baku
+											td
+												span 07/20/1984
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Sabina Mamedova
+											td
+												span +994 55 757 96 06
+											td
+												span sabina.mammadova@gmail.com
+											td
+												span iOs
+											td
+												span Azercell
+											td
+												span Female
+											td
+												span Baku
+											td
+												span 07/20/1984
+							.contentFoot
+								ul.pagination.left
+									li.page-item
+										a.page-link(href="#")
+											i.icon-paginator-arrow-left
+									li.page-item
+										a.page-link(href="#") 1
+									li.page-item
+										a.page-link(href="#") 2
+									li.page-item
+										a.page-link(href="#") 3
+									li.page-item
+										span ...
+									li.page-item
+										a.page-link(href="#") 17
+									li.page-item
+										a.page-link(href="#") 18
+									li.page-item
+										a.page-link(href="#") 19
+									li.page-item
+										a.page-link(href="#")
+											i.icon-paginator-arrow-right
+								.viewCount.right
+									label Display on page
+									select.styler
+										option(value="20") 20
+										option(value="40") 40
+										option(value="60") 60
+			// end #content
+		// end #mainWrap

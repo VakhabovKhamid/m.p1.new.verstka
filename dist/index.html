@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Title Project</title>
+    <link rel="stylesheet" href="css/icons.css"/>
+    <link rel="stylesheet" href="css/defaultStyles.css"/>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/animated.css"/>
+    <link rel="stylesheet" href="css/jquery.formstyler.css"/>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="redactor/plugins/filemanager/filemanager.min.css"/>
+    <link rel="stylesheet" href="redactor/redactor.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.formstyler.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-datepicker.ru.min.js"></script>
+    <script src="js/bootstrap-datepicker.az.min.js"></script>
+    <script src="redactor/redactor.js"></script>
+    <script src="redactor/plugins/filemanager/filemanager.min.js"></script>
+    <script src="redactor/plugins/alignment/alignment.min.js"></script>
+    <script src="redactor/plugins/imagemanager/imagemanager.min.js"></script>
+    <script src="redactor/plugins/table/table.min.js"></script>
+    <script src="redactor/plugins/counter/counter.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/highcharts.css"/>
+  </head>
+  <body>
+    <!-- start #mainWrap-->
+    <div id="mainWrap">
+      <!-- start #mainNavBar-->
+      <div id="mainNavBar">
+        <div class="mainNavInnerWrap">
+          <div class="logo"><a href="index.html"><span class="icoItem"><img src="images/icoLogo.svg" alt=""/></span><span class="fullItem"><img src="images/logo.svg" alt=""/></span></a></div>
+          <nav class="mainNav">
+            <ul>
+              <li class="active"><a href="index.html"> <span class="icoItem"><i class="icon-nav-item1"></i></span><span class="fullItem">Dashboard</span></a></li>
+              <li><a href="notifications.html"><span class="icoItem"><i class="icon-nav-item2"></i></span><span class="fullItem">Notifications</span></a></li>
+              <li><a href="subscribers.html"> <span class="icoItem"><i class="icon-nav-item3"></i></span><span class="fullItem">Subscribers</span></a></li>
+              <li><a href="feedback.html"> <span class="icoItem"><i class="icon-nav-item4"></i></span><span class="fullItem">Feedback</span></a></li>
+              <li><a href="#sumNavBar1" class="dropDownItem"> <span class="icoItem"><i class="icon-nav-item5"></i></span><span class="fullItem">Content</span></a></li>
+            </ul>
+          </nav>
+          <div class="navBarHr"></div>
+          <nav class="minNav">
+            <ul>
+              <li><a href="settings-general.html"> <span class="icoItem"><i class="icon-options"></i></span><span class="fullItem">Settings</span></a></li>
+              <li><a href="activity-log.html"> <span class="icoItem"><i class="icon-activity-log"></i></span><span class="fullItem">Activity Log</span></a></li>
+            </ul>
+          </nav>
+          <div class="navBarFooter"><a href="#" target="_blank" class="link1">www.ulduzum.az</a>
+            <div class="poweredBy">Powered by Magnum</div>
+          </div>
+        </div>
+        <div id="sumNavBar1" class="sumNavBar">
+          <div class="navTitle">PROJECT STRUCTURE</div>
+          <nav class="sumNav">
+            <ul>
+              <li class="active"><a href="faq.html"><i class="icon-archive2"></i><span>FAQ</span></a></li>
+              <li><a href="terms-privacy.html"><i class="icon-file"></i><span>Terms & Privacy</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- end #mainNavBar-->
+      <!-- start #header-->
+      <div id="header">
+        <div class="headerLeft">
+          <button id="js-toggle-navBar" class="navBtn"><span></span></button>
+          <div class="mainTitle">Application Management</div>
+        </div>
+        <div class="headerRight">
+          <div class="userBlock">
+            <div class="userName">Rasim R.</div>
+            <div class="userIco"><i class="icon-user"></i></div>
+          </div>
+        </div>
+      </div>
+      <!-- end #header-->
+      <!-- start #content-->
+      <div id="content">
+        <div class="mainContainer">
+          <div class="pageContent contentShow">
+            <div class="contentHead">
+              <div class="title-1">Statistics</div>
+            </div>
+            <div class="chartWrap">
+              <nav class="periodsNav">
+                <ul>
+                  <li><a href="#" data-dropdow="#customStatisticChart" class="btnDropDown">Custom</a>
+                    <div id="customStatisticChart" class="dropDownBox alignLeft">
+                      <div id="statisticInputDateRange" class="input-daterange"><i class="icon-calendar"></i>
+                        <input type="text" placeholder="Date from" class="date_format start"/><i class="icon-arrow1-right"></i>
+                        <input type="text" placeholder="Date to" class="date_format end"/>
+                      </div>
+                      <div class="js-datepicker-inline"><div class="range-start"></div><div class="range-end"></div></div>
+                      <div class="dropDownBoxFoot">
+                        <button class="btn0 btn2 btnBlock">OK</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="#">Year</a></li>
+                  <li><a href="#">Month</a></li>
+                  <li><a href="#">Week</a></li>
+                  <li><a href="#">Yesterday</a></li>
+                  <li class="active"><a href="#">Today</a></li>
+                </ul>
+              </nav>
+              <div id="js-statistics-chart"></div>
+              <div class="statisticsNumbers">
+                <div class="statisticsNumber">
+                  <div class="dynamicNumber green">+435</div><strong>3542</strong><span>Redeems Last Month</span>
+                </div>
+                <div class="statisticsNumber">
+                  <div class="dynamicNumber green">+25</div><strong>872</strong><span>Redeems Last Week</span>
+                </div>
+                <div class="statisticsNumber">
+                  <div class="dynamicNumber green">+12</div><strong>55</strong><span>Redeems Today</span>
+                </div>
+              </div>
+            </div>
+            <div class="contentHead">
+              <div class="title-1">Latest Feedbacks</div>
+            </div>
+            <div class="contentBlock">
+              <div class="table1">
+                <table>
+                  <thead>
+                    <tr>
+                      <td>USER</td>
+                      <td>FEEDBACK</td>
+                      <td>DATE</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Rasim Rahmanov</strong></p>
+                        <p><span class="greyText">+994 55 757 96 06</span></p>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Subject</strong></p>
+                        <p>Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….</p>
+                      </td>
+                      <td>
+                        <p>21:35 &nbsp;<span class="greyText">12.02.2018</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Rasim Rahmanov</strong></p>
+                        <p><span class="greyText">+994 55 757 96 06</span></p>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><span class="label1 labelGreen">Replied</span><span> Subject</span></p>
+                        <p> <span class="greyText">Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….</span></p>
+                      </td>
+                      <td>
+                        <p>21:35 &nbsp;<span class="greyText">12.02.2018</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Rasim Rahmanov</strong></p>
+                        <p><span class="greyText">+994 55 757 96 06</span></p>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Subject</strong></p>
+                        <p>Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….</p>
+                      </td>
+                      <td>
+                        <p>21:35 &nbsp;<span class="greyText">12.02.2018</span></p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="clearFix"><a href="feedback.html" class="redLink right"><span>See all</span><i class="icon-arrow1-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end #content-->
+      <div id="reply" class="modalWindow">
+        <div class="modalWindowMask"></div>
+        <div class="modalWindowBody">
+          <div class="modalWindowClose"><i class="icon-close"></i></div>
+          <div class="feedbackModalHead">
+            <div class="userName">Rasim Rahmanov</div>
+            <div class="greyText">+994 55 757 96 06</div>
+          </div>
+          <div class="feedbackModalContent">
+            <p><strong>Subject</strong></p>
+            <p>Nulla vestibulum, diam laoreet commodo suscipit, justo arcu rutrum dui, vitae aliquet velit libero id urna. Integer sollicitudin tincidunt mi, ac lacinia quam iaculis sit amet. Nulla at eros aliquet, pretium metus ac, molestie urna. Suspendisse potenti. In lobortis odio placerat augue congue, at blandit felis tincidunt. Mauris vitae iaculis augue, in pharetra urna. Cras posuere quis augue in cursus. Mauris velit tortor, suscipit et malesuada ac, facilisis nec nibh. Phasellus mollis tempus ante ac posuere.</p>
+          </div>
+          <div class="feedbackModalForm">
+            <div class="formControl">
+              <div class="field">
+                <textarea rows="5" placeholder="Write your reply…"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modalWindowFooter textRight">
+            <button type="button" onclick="hideModal($(&quot;#reply&quot;))" class="btn0 btn2">Cancel</button>
+            <button type="submit" class="btn0 btn1">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end #mainWrap-->
+    <script src="js/highcharts.js"></script>
+    <script src="js/charts-scripts.js"></script>
+    <div id="loader">
+      <div class="loaderInnerWrap">
+        <div class="loader">
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__bar"></div>
+          <div class="loader__ball"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

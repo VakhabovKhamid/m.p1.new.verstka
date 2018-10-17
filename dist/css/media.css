@@ -1,0 +1,36 @@
+/*
+font-family: "OpenSansLight";
+font-family: "OpenSansBold";
+font-family: "OpenSansItalic";
+font-family: "OpenSansLightItalic";
+font-family: "OpenSansRegular";
+font-family: "OpenSansSemiBold";
+*/
+@media screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden; }
+  .mainContainer {
+    width: 100%; }
+  .row20 {
+    margin: 0; }
+  .colp20-12,
+  .colp20-11,
+  .colp20-10,
+  .colp20-9,
+  .colp20-8,
+  .colp20-7,
+  .colp20-6,
+  .colp20-5,
+  .colp20-4,
+  .colp20-3,
+  .colp20-2,
+  .colp20-1 {
+    display: block;
+    margin: 0 0 20px;
+    float: none;
+    width: 100%;
+    padding: 0; }
+  .btnNav {
+    display: block; } }

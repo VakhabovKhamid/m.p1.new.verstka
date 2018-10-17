@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include includes/_head.jade
+	body
+		// start #mainWrap
+		#mainWrap
+			// start #mainNavBar
+			#mainNavBar
+				include includes/_main_nav_bar.jade
+			// end #mainNavBar
+			// start #header
+			#header
+				include includes/_header.jade
+			// end #header
+			// start #content
+			#content
+				.mainContainer
+					.pageContent.contentShow
+						.contentHead
+							.title-1 Settings
+						nav.contentTabs
+							ul
+								li.active
+									a GENERAL
+								li
+									a(href="settings-users.html") USERS
+						.contentBlock
+							.row30
+								.colp30-4
+									.formControl
+										label Site title
+										.field
+											input(type="text")
+									.formControl
+										label Admin Email
+										.field
+											input(type="email")
+									.formControl
+										label Admin interface language
+										.field
+											select.styler
+												option(value="") English
+												option(value="") Azerbaijani
+												option(value="") Russian
+							.formSubmit
+								button.btn0.btn1(type='submit') Save
+			// end #content
+		// end #mainWrap

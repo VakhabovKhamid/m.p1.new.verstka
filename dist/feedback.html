@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Title Project</title>
+    <link rel="stylesheet" href="css/icons.css"/>
+    <link rel="stylesheet" href="css/defaultStyles.css"/>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/animated.css"/>
+    <link rel="stylesheet" href="css/jquery.formstyler.css"/>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="redactor/plugins/filemanager/filemanager.min.css"/>
+    <link rel="stylesheet" href="redactor/redactor.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.formstyler.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-datepicker.ru.min.js"></script>
+    <script src="js/bootstrap-datepicker.az.min.js"></script>
+    <script src="redactor/redactor.js"></script>
+    <script src="redactor/plugins/filemanager/filemanager.min.js"></script>
+    <script src="redactor/plugins/alignment/alignment.min.js"></script>
+    <script src="redactor/plugins/imagemanager/imagemanager.min.js"></script>
+    <script src="redactor/plugins/table/table.min.js"></script>
+    <script src="redactor/plugins/counter/counter.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- start #mainWrap-->
+    <div id="mainWrap">
+      <!-- start #mainNavBar-->
+      <div id="mainNavBar">
+        <div class="mainNavInnerWrap">
+          <div class="logo"><a href="index.html"><span class="icoItem"><img src="images/icoLogo.svg" alt=""/></span><span class="fullItem"><img src="images/logo.svg" alt=""/></span></a></div>
+          <nav class="mainNav">
+            <ul>
+              <li class="active"><a href="index.html"> <span class="icoItem"><i class="icon-nav-item1"></i></span><span class="fullItem">Dashboard</span></a></li>
+              <li><a href="notifications.html"><span class="icoItem"><i class="icon-nav-item2"></i></span><span class="fullItem">Notifications</span></a></li>
+              <li><a href="subscribers.html"> <span class="icoItem"><i class="icon-nav-item3"></i></span><span class="fullItem">Subscribers</span></a></li>
+              <li><a href="feedback.html"> <span class="icoItem"><i class="icon-nav-item4"></i></span><span class="fullItem">Feedback</span></a></li>
+              <li><a href="#sumNavBar1" class="dropDownItem"> <span class="icoItem"><i class="icon-nav-item5"></i></span><span class="fullItem">Content</span></a></li>
+            </ul>
+          </nav>
+          <div class="navBarHr"></div>
+          <nav class="minNav">
+            <ul>
+              <li><a href="settings-general.html"> <span class="icoItem"><i class="icon-options"></i></span><span class="fullItem">Settings</span></a></li>
+              <li><a href="activity-log.html"> <span class="icoItem"><i class="icon-activity-log"></i></span><span class="fullItem">Activity Log</span></a></li>
+            </ul>
+          </nav>
+          <div class="navBarFooter"><a href="#" target="_blank" class="link1">www.ulduzum.az</a>
+            <div class="poweredBy">Powered by Magnum</div>
+          </div>
+        </div>
+        <div id="sumNavBar1" class="sumNavBar">
+          <div class="navTitle">PROJECT STRUCTURE</div>
+          <nav class="sumNav">
+            <ul>
+              <li class="active"><a href="faq.html"><i class="icon-archive2"></i><span>FAQ</span></a></li>
+              <li><a href="terms-privacy.html"><i class="icon-file"></i><span>Terms & Privacy</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- end #mainNavBar-->
+      <!-- start #header-->
+      <div id="header">
+        <div class="headerLeft">
+          <button id="js-toggle-navBar" class="navBtn"><span></span></button>
+          <div class="mainTitle">Application Management</div>
+        </div>
+        <div class="headerRight">
+          <div class="userBlock">
+            <div class="userName">Rasim R.</div>
+            <div class="userIco"><i class="icon-user"></i></div>
+          </div>
+        </div>
+      </div>
+      <!-- end #header-->
+      <!-- start #content-->
+      <div id="content">
+        <div class="mainContainer">
+          <div class="pageContent contentShow">
+            <div class="contentHead">
+              <div class="title-1">Feedback</div>
+            </div>
+            <nav class="contentTabs">
+              <ul>
+                <li class="active"><a>ALL</a></li>
+                <li><a href="#">ARCHIVE</a></li>
+              </ul>
+            </nav>
+            <div class="contentBlock">
+              <div class="clearFix">
+                <div class="searchForm left">
+                  <div class="searchInput">
+                    <input type="text" placeholder="Search"/>
+                    <button type="submit" class="searchInputBtn"><i class="icon-search"></i></button>
+                  </div>
+                  <div class="select1 selectAutoWidth">
+                    <select class="styler">
+                      <option value="">All</option>
+                      <option value="">Positive</option>
+                      <option value="">Negative</option>
+                      <option value="">Question</option>
+                      <option value="">Proposal</option>
+                    </select>
+                  </div>
+                </div><a href="#" class="btn0 btnRed right">Archive</a>
+              </div>
+              <div class="hr1"></div>
+              <div class="table1">
+                <table>
+                  <thead>
+                    <tr>
+                      <td></td>
+                      <td>USER</td>
+                      <td width="50%">FEEDBACK</td>
+                      <td>PARTNER</td>
+                      <td align="right">DATE / TYPE</td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input type="checkbox" class="styler"/>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Rasim Rahmanov</strong></p>
+                        <p><span class="greyText">+994 55 757 96 06</span></p>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Subject</strong></p>
+                        <p> <span class="greyText">Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….</span></p>
+                      </td>
+                      <td><span>Vegas Optic</span></td>
+                      <td align="right">
+                        <p>21:35 &nbsp;<span class="greyText">12.02.2018</span></p>
+                        <div class="typeGreen">Positive</div>
+                      </td>
+                      <td>
+                        <div class="tableButtons"><a href="#"><i class="icon-archive"></i></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" class="styler"/>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Rasim Rahmanov</strong></p>
+                        <p><span class="greyText">+994 55 757 96 06</span></p>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Subject</strong></p>
+                        <p> <span class="greyText">Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….</span></p>
+                      </td>
+                      <td><span>McDonalds</span></td>
+                      <td align="right">
+                        <p>21:35 &nbsp;<span class="greyText">12.02.2018</span></p>
+                        <div class="typeGreen">Positive</div>
+                      </td>
+                      <td>
+                        <div class="tableButtons"><a href="#"><i class="icon-archive"></i></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" class="styler"/>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Rasim Rahmanov</strong></p>
+                        <p><span class="greyText">+994 55 757 96 06</span></p>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><span class="label1 labelGreen">Replied</span><strong> Subject</strong></p>
+                        <p> <span class="greyText">Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….</span></p>
+                      </td>
+                      <td><span>Application</span></td>
+                      <td align="right">
+                        <p>21:35 &nbsp;<span class="greyText">12.02.2018</span></p>
+                        <div class="typeRed">Negative</div>
+                      </td>
+                      <td>
+                        <div class="tableButtons"><a href="#"><i class="icon-archive"></i></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" class="styler"/>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Rasim Rahmanov</strong></p>
+                        <p><span class="greyText">+994 55 757 96 06</span></p>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Subject</strong></p>
+                        <p> <span class="greyText">Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….</span></p>
+                      </td>
+                      <td><span>Ideal</span></td>
+                      <td align="right">
+                        <p>21:35 &nbsp;<span class="greyText">12.02.2018</span></p>
+                        <div class="typeGrey">Question</div>
+                      </td>
+                      <td>
+                        <div class="tableButtons"><a href="#"><i class="icon-archive"></i></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" class="styler"/>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Rasim Rahmanov</strong></p>
+                        <p><span class="greyText">+994 55 757 96 06</span></p>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Subject</strong></p>
+                        <p> <span class="greyText">Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….</span></p>
+                      </td>
+                      <td><span>Spar Yasamal</span></td>
+                      <td align="right">
+                        <p>21:35 &nbsp;<span class="greyText">12.02.2018</span></p>
+                        <div class="typeGrey">Proposal</div>
+                      </td>
+                      <td>
+                        <div class="tableButtons"><a href="#"><i class="icon-archive"></i></a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" class="styler"/>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Rasim Rahmanov</strong></p>
+                        <p><span class="greyText">+994 55 757 96 06</span></p>
+                      </td>
+                      <td data-modal="#reply" class="btnModal">
+                        <p><strong>Subject</strong></p>
+                        <p> <span class="greyText">Phasellus id nibh quis massa imperdiet dignissim sit amet in urna. Maecenas vitae posuere nisi. Nam laoreet….</span></p>
+                      </td>
+                      <td><span>2Teker</span></td>
+                      <td align="right">
+                        <p>21:35 &nbsp;<span class="greyText">12.02.2018</span></p>
+                        <div class="typeRed">Negative</div>
+                      </td>
+                      <td>
+                        <div class="tableButtons"><a href="#"><i class="icon-archive"></i></a></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="contentFoot">
+                <ul class="pagination left">
+                  <li class="page-item"><a href="#" class="page-link"><i class="icon-paginator-arrow-left"></i></a></li>
+                  <li class="page-item"><a href="#" class="page-link">1</a></li>
+                  <li class="page-item"><a href="#" class="page-link">2</a></li>
+                  <li class="page-item"><a href="#" class="page-link">3</a></li>
+                  <li class="page-item"><span>...</span></li>
+                  <li class="page-item"><a href="#" class="page-link">17</a></li>
+                  <li class="page-item"><a href="#" class="page-link">18</a></li>
+                  <li class="page-item"><a href="#" class="page-link">19</a></li>
+                  <li class="page-item"><a href="#" class="page-link"><i class="icon-paginator-arrow-right"></i></a></li>
+                </ul>
+                <div class="viewCount right">
+                  <label>Display on page</label>
+                  <select class="styler">
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                    <option value="60">60</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end #content-->
+      <div id="reply" class="modalWindow">
+        <div class="modalWindowMask"></div>
+        <div class="modalWindowBody">
+          <div class="modalWindowClose"><i class="icon-close"></i></div>
+          <div class="feedbackModalHead">
+            <div class="userName">Rasim Rahmanov</div>
+            <div class="greyText">+994 55 757 96 06</div>
+          </div>
+          <div class="feedbackModalContent">
+            <p><strong>Subject</strong></p>
+            <p>Nulla vestibulum, diam laoreet commodo suscipit, justo arcu rutrum dui, vitae aliquet velit libero id urna. Integer sollicitudin tincidunt mi, ac lacinia quam iaculis sit amet. Nulla at eros aliquet, pretium metus ac, molestie urna. Suspendisse potenti. In lobortis odio placerat augue congue, at blandit felis tincidunt. Mauris vitae iaculis augue, in pharetra urna. Cras posuere quis augue in cursus. Mauris velit tortor, suscipit et malesuada ac, facilisis nec nibh. Phasellus mollis tempus ante ac posuere.</p>
+          </div>
+          <div class="feedbackModalForm">
+            <div class="formControl">
+              <div class="field">
+                <textarea rows="5" placeholder="Write your reply…"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modalWindowFooter textRight">
+            <button type="button" class="btn0 btn2">Cancel</button>
+            <button type="submit" class="btn0 btn1">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end #mainWrap-->
+  </body>
+</html>

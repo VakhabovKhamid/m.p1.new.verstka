@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include includes/_head.jade
+	body
+		// start #mainWrap
+		#mainWrap
+			// start #mainNavBar
+			#mainNavBar
+				include includes/_main_nav_bar.jade
+			// end #mainNavBar
+			// start #header
+			#header
+				include includes/_header.jade
+			// end #header
+			// start #content
+			#content
+				.mainContainer
+					.pageContent.contentShow
+						.contentHead
+							.title-1.left Settings
+							a.btn0.btn1.right(href="#")
+								i.icon-plus
+								span Add
+						nav.contentTabs
+							ul
+								li
+									a(href="settings-general.html") GENERAL
+								li.active
+									a USERS
+						.contentBlock
+							.clearFix
+								.searchForm.left
+									.searchInput
+										input(type="text", placeholder='Search')
+										button.searchInputBtn(type='submit')
+											i.icon-search
+								.buttonsJustify.right
+									a.btn0.btn2(href="#") Activate
+									a.btn0.btn2(href="#") Suspend
+									a.btn0.btnRed(href="#") Delete
+							.hr1
+							.table1
+								table
+									thead
+										tr
+											td(width='30')
+											td NAME
+											td EMAIL
+											td LAST LOGIN
+											td STATUS
+											td 
+									tbody
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Michael Jackson
+											td
+												span king@gmail.com
+											td
+												span 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td
+												span Active
+											td(align='right')
+												.tableButtons
+													a(href="#")
+														i.icon-pen
+													a(href="#")
+														i.icon-trash
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Michael Jackson
+											td
+												span king@gmail.com
+											td
+												span 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td
+												span Active
+											td(align='right')
+												.tableButtons
+													a(href="#")
+														i.icon-pen
+													a(href="#")
+														i.icon-trash
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Michael Jackson
+											td
+												span king@gmail.com
+											td
+												span 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td
+												span Active
+											td(align='right')
+												.tableButtons
+													a(href="#")
+														i.icon-pen
+													a(href="#")
+														i.icon-trash
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Michael Jackson
+											td
+												span king@gmail.com
+											td
+												span 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td
+												span Active
+											td(align='right')
+												.tableButtons
+													a(href="#")
+														i.icon-pen
+													a(href="#")
+														i.icon-trash
+										tr
+											td
+												input.styler(type="checkbox")
+											td
+												strong Michael Jackson
+											td
+												span king@gmail.com
+											td
+												span 21:35 &nbsp;
+													span.greyText 12.02.2018
+											td
+												span Active
+											td(align='right')
+												.tableButtons
+													a(href="#")
+														i.icon-pen
+													a(href="#")
+														i.icon-trash
+							.contentFoot
+								ul.pagination.left
+									li.page-item
+										a.page-link(href="#")
+											i.icon-paginator-arrow-left
+									li.page-item
+										a.page-link(href="#") 1
+									li.page-item
+										a.page-link(href="#") 2
+									li.page-item
+										a.page-link(href="#") 3
+									li.page-item
+										span ...
+									li.page-item
+										a.page-link(href="#") 17
+									li.page-item
+										a.page-link(href="#") 18
+									li.page-item
+										a.page-link(href="#") 19
+									li.page-item
+										a.page-link(href="#")
+											i.icon-paginator-arrow-right
+								.viewCount.right
+									label Display on page
+									select.styler
+										option(value="20") 20
+										option(value="40") 40
+										option(value="60") 60
+			// end #content
+		// end #mainWrap
